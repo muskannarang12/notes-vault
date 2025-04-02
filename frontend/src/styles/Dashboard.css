@@ -1,0 +1,456 @@
+/* Dashboard.css - 100% Isolated Styles */
+.dashboard-isolated {
+  padding: 20px;
+  max-width: 1500px;
+  /* margin: 0 auto; */
+  min-height: 50vh;
+  background-color: #f8f9fa;
+}
+
+.dashboard-isolated .dashboard-title {
+  color: #003049;
+  /* margin-bottom: 2rem; */
+  text-align: center;
+}
+
+/* Forms */
+.dashboard-isolated .dashboard-form-container {
+  width: 100%;
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-isolated .dashboard-task-form {
+  margin-bottom: 0;
+}
+
+.dashboard-isolated .dashboard-form-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #003049;
+  font-size: 1.5rem;
+}
+
+.dashboard-isolated .dashboard-form-group {
+  margin-bottom: 1.8rem;
+}
+
+.dashboard-isolated .dashboard-form-label {
+  display: flex;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+  color: #003049;
+  font-size: 1.1rem;
+}
+
+.dashboard-isolated .dashboard-form-input,
+.dashboard-isolated .dashboard-form-textarea,
+.dashboard-isolated .dashboard-form-select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border 0.3s;
+}
+
+.dashboard-isolated .dashboard-form-input:focus,
+.dashboard-isolated .dashboard-form-textarea:focus,
+.dashboard-isolated .dashboard-form-select:focus {
+  border-color: #003049;
+  outline: none;
+}
+
+.dashboard-isolated .dashboard-form-textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.dashboard-isolated .dashboard-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Buttons */
+.dashboard-isolated .dashboard-btn {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.dashboard-isolated .dashboard-primary-btn,
+.dashboard-isolated .dashboard-save-btn {
+  background-color: #003049;
+  color: white;
+}
+
+.dashboard-isolated .dashboard-primary-btn:hover,
+.dashboard-isolated .dashboard-save-btn:hover {
+  background-color: #02416b;
+}
+
+.dashboard-isolated .dashboard-cancel-btn,
+.dashboard-isolated .dashboard-delete-btn {
+  background-color: #e91e63;
+  color: white;
+}
+
+.dashboard-isolated .dashboard-cancel-btn:hover,
+.dashboard-isolated .dashboard-delete-btn:hover {
+  background-color: #c2185b;
+}
+
+.dashboard-isolated .dashboard-edit-btn {
+  background-color: #003049;
+  color: white;
+  margin: 10px;
+}
+
+.dashboard-isolated .dashboard-icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  color: #003049;
+  transition: color 0.2s;
+}
+
+.dashboard-isolated .dashboard-icon-btn:hover {
+  color: #e91e63;
+}
+
+/* Dialogs */
+.dashboard-isolated .dashboard-dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.dashboard-isolated .dashboard-dialog-box {
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.dashboard-isolated .dashboard-success-dialog {
+  border-top: 4px solid #003049;
+}
+
+.dashboard-isolated .dashboard-delete-dialog {
+  border-top: 4px solid #e91e63;
+}
+
+.dashboard-isolated .dashboard-edit-dialog {
+  max-width: 700px;
+  border-top: 4px solid #003049;
+}
+
+.dashboard-isolated .dashboard-dialog-message {
+  margin-bottom: 2rem;
+  color: #003049;
+  font-size: 1.2rem;
+}
+
+.dashboard-isolated .dashboard-dialog-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.dashboard-isolated .dashboard-dialog-btn {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.dashboard-isolated .dashboard-dialog-ok-btn,
+.dashboard-isolated .dashboard-dialog-confirm-btn {
+  background-color: #003049;
+  color: white;
+}
+
+.dashboard-isolated .dashboard-dialog-ok-btn:hover,
+.dashboard-isolated .dashboard-dialog-confirm-btn:hover {
+  background-color: #02416b;
+}
+
+.dashboard-isolated .dashboard-dialog-cancel-btn {
+  background-color: #e91e63;
+  color: white;
+}
+
+.dashboard-isolated .dashboard-dialog-cancel-btn:hover {
+  background-color: #d81c5b;
+}
+
+/* Task List */
+.dashboard-isolated .dashboard-task-list {
+  margin-top: 3rem;
+}
+
+.dashboard-isolated .dashboard-section-title {
+  margin-bottom: 1.5rem;
+  color: #003049;
+  font-size: 1.5rem;
+}
+
+.dashboard-isolated .dashboard-task-items {
+  list-style: none;
+  padding: 0;
+}
+
+.dashboard-isolated .dashboard-task-item {
+  background-color: white;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.dashboard-isolated .dashboard-task-item:hover {
+  transform: translateY(-3px);
+}
+
+.dashboard-isolated .dashboard-task-title {
+  margin: 0 0 0.5rem 0;
+  color: #003049;
+  font-size: 1.2rem;
+}
+
+
+
+.dashboard-isolated .dashboard-task-detail {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.dashboard-isolated .dashboard-task-description {
+  margin-bottom: 1rem;
+  color: #495057;
+}
+
+/* Empty State */
+.dashboard-isolated .dashboard-no-tasks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  text-align: center;
+}
+
+.dashboard-isolated .dashboard-empty-state {
+  background-color: white;
+  padding: 3rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-isolated .dashboard-empty-message {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  color: #003049;
+}
+
+/* Task Category Page */
+.task-category-page {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.task-item {
+  padding: 15px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.task-item:hover {
+  background-color: #f5f5f5;
+}
+
+.task-item.selected {
+  background-color: #e3f2fd;
+  border-color: #f44336;
+}
+
+.task-detail {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+}
+
+.task-actions {
+  margin-top: 15px;
+}
+
+.task-actions button {
+  margin-right: 10px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task-actions button:first-child {
+  background-color: #f44336 ;
+  color: white;
+}
+
+.task-actions button:last-child {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Edit Task Modal */
+.edit-task-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Delete Confirmation Modal */
+.delete-confirm-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.delete-confirm-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.confirm-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.confirm-buttons button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.confirm-buttons button:first-child {
+  background-color: #f5f5f5;
+}
+
+.confirm-buttons button:last-child {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Improved Form Styles */
+.dashboard-isolated .dashboard-form-container {
+  width: 90%;
+  max-width: 600px;
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-isolated .dashboard-edit-dialog {
+  max-width: 600px;
+  padding: 1.5rem;
+  background-color: white;
+}
+
+.dashboard-isolated .dashboard-form-title {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #003049;
+}
+
+.dashboard-isolated .dashboard-form-group {
+  margin-bottom: 1rem;
+}
+
+.dashboard-isolated .dashboard-form-textarea {
+  min-height: 100px;
+}
+
+.dashboard-isolated .dashboard-form-actions {
+  margin-top: 1.5rem;
+}
+
+/* Make inputs more compact */
+.dashboard-isolated .dashboard-form-input,
+.dashboard-isolated .dashboard-form-textarea,
+.dashboard-isolated .dashboard-form-select {
+  padding: 10px;
+  font-size: 0.95rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .dashboard-isolated .dashboard-form-container,
+  .dashboard-isolated .dashboard-edit-dialog {
+    width: 95%;
+    padding: 1rem;
+  }
+  
+  .dashboard-isolated .dashboard-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
